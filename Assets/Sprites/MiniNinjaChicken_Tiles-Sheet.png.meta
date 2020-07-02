@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: c418485f23526724293cc4a7af4cfce2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6215016479157723437
+    second: MiniNinjaChicken_Tiles-Sheet_0
+  - first:
+      213: 483435966785347769
+    second: MiniNinjaChicken_Tiles-Sheet_1
+  - first:
+      213: -2226499095586302190
+    second: MiniNinjaChicken_Tiles-Sheet_2
+  - first:
+      213: -9031615159262682327
+    second: MiniNinjaChicken_Tiles-Sheet_3
+  - first:
+      213: 1618911195593654481
+    second: MiniNinjaChicken_Tiles-Sheet_4
+  - first:
+      213: -4028529527561680926
+    second: MiniNinjaChicken_Tiles-Sheet_5
+  - first:
+      213: 3860520258217622309
+    second: MiniNinjaChicken_Tiles-Sheet_6
+  - first:
+      213: -6565395596700089700
+    second: MiniNinjaChicken_Tiles-Sheet_7
+  - first:
+      213: 2558254182916106488
+    second: MiniNinjaChicken_Tiles-Sheet_8
+  - first:
+      213: -4977777679424593857
+    second: MiniNinjaChicken_Tiles-Sheet_9
+  - first:
+      213: -4830044090148352266
+    second: MiniNinjaChicken_Tiles-Sheet_10
+  - first:
+      213: 443548669586122982
+    second: MiniNinjaChicken_Tiles-Sheet_11
+  - first:
+      213: -7354391021310150558
+    second: MiniNinjaChicken_Tiles-Sheet_12
+  - first:
+      213: -4215219158328158239
+    second: MiniNinjaChicken_Tiles-Sheet_13
+  - first:
+      213: -1028569337998050282
+    second: MiniNinjaChicken_Tiles-Sheet_14
+  - first:
+      213: -8605214664840260966
+    second: MiniNinjaChicken_Tiles-Sheet_15
+  - first:
+      213: -3528484923729203238
+    second: MiniNinjaChicken_Tiles-Sheet_16
+  - first:
+      213: 6136300665487003525
+    second: MiniNinjaChicken_Tiles-Sheet_17
+  - first:
+      213: -4301465829887861515
+    second: MiniNinjaChicken_Tiles-Sheet_18
+  - first:
+      213: -1233855475644281061
+    second: MiniNinjaChicken_Tiles-Sheet_19
+  - first:
+      213: 7329573591288725926
+    second: MiniNinjaChicken_Tiles-Sheet_20
+  - first:
+      213: 4361248011659450512
+    second: MiniNinjaChicken_Tiles-Sheet_21
+  - first:
+      213: -7287922501586988153
+    second: MiniNinjaChicken_Tiles-Sheet_22
+  - first:
+      213: 5747031931896784573
+    second: MiniNinjaChicken_Tiles-Sheet_23
+  - first:
+      213: 1656168241016838892
+    second: MiniNinjaChicken_Tiles-Sheet_0
+  - first:
+      213: -1825792312091620335
+    second: MiniNinjaChicken_Tiles-Sheet_1
+  - first:
+      213: -2889341941587021444
+    second: MiniNinjaChicken_Tiles-Sheet_2
+  - first:
+      213: 6628462929266121458
+    second: MiniNinjaChicken_Tiles-Sheet_3
+  - first:
+      213: -3216512056494036648
+    second: MiniNinjaChicken_Tiles-Sheet_4
+  - first:
+      213: -7283878819665440522
+    second: MiniNinjaChicken_Tiles-Sheet_5
+  - first:
+      213: 631914845661724460
+    second: MiniNinjaChicken_Tiles-Sheet_6
+  - first:
+      213: 2550601929817972188
+    second: MiniNinjaChicken_Tiles-Sheet_7
+  - first:
+      213: 7778766035573288982
+    second: MiniNinjaChicken_Tiles-Sheet_8
+  - first:
+      213: 8946760227124050967
+    second: MiniNinjaChicken_Tiles-Sheet_9
+  - first:
+      213: 5614441891663669993
+    second: MiniNinjaChicken_Tiles-Sheet_10
+  - first:
+      213: -4668942195754050918
+    second: MiniNinjaChicken_Tiles-Sheet_11
+  - first:
+      213: 1824519277334926167
+    second: MiniNinjaChicken_Tiles-Sheet_12
+  - first:
+      213: 8621230555508827002
+    second: MiniNinjaChicken_Tiles-Sheet_13
+  - first:
+      213: 3433239611663639079
+    second: MiniNinjaChicken_Tiles-Sheet_14
+  - first:
+      213: 3732226624288857249
+    second: MiniNinjaChicken_Tiles-Sheet_15
+  - first:
+      213: 3991528123747224742
+    second: MiniNinjaChicken_Tiles-Sheet_16
+  - first:
+      213: -8303888317439810626
+    second: MiniNinjaChicken_Tiles-Sheet_17
+  - first:
+      213: -4365909835938639082
+    second: MiniNinjaChicken_Tiles-Sheet_18
+  - first:
+      213: 7641014001020535215
+    second: MiniNinjaChicken_Tiles-Sheet_19
+  - first:
+      213: -2729175484818976219
+    second: MiniNinjaChicken_Tiles-Sheet_20
+  - first:
+      213: 3784109839736256651
+    second: MiniNinjaChicken_Tiles-Sheet_21
+  - first:
+      213: 2361481427053457357
+    second: MiniNinjaChicken_Tiles-Sheet_22
+  - first:
+      213: 3596826092542972503
+    second: MiniNinjaChicken_Tiles-Sheet_23
+  - first:
+      213: -1780874758037447920
+    second: MiniNinjaChicken_Tiles-Sheet_24
+  - first:
+      213: 4592480855972274550
+    second: MiniNinjaChicken_Tiles-Sheet_25
+  - first:
+      213: 7480789763676675144
+    second: MiniNinjaChicken_Tiles-Sheet_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea971e8d34ebf610800000000000000
+      internalID: 1656168241016838892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cc32cc09b79a6e0800000000000000
+      internalID: -1825792312091620335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71711100def6e7d0800000000000000
+      internalID: -2889341941587021444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa90c14ae70dfb50800000000000000
+      internalID: 6628462929266121458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85969e09357ac53d0800000000000000
+      internalID: -3216512056494036648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f099de1ec67aea90800000000000000
+      internalID: -7283878819665440522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f76ff343305c800800000000000000
+      internalID: 631914845661724460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddd93601fe856320800000000000000
+      internalID: 2550601929817972188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6103835ee7ab3fb60800000000000000
+      internalID: 7778766035573288982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c725c4607492c70800000000000000
+      internalID: 8946760227124050967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea6fa467218aed40800000000000000
+      internalID: 5614441891663669993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a5f316fc5943fb0800000000000000
+      internalID: -4668942195754050918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7539663bd9ef15910800000000000000
+      internalID: 1824519277334926167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73e8d35383c4a770800000000000000
+      internalID: 8621230555508827002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722e20a9c3155af20800000000000000
+      internalID: 3433239611663639079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac1ef137588bc330800000000000000
+      internalID: 3732226624288857249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac4fe63ea1c46730800000000000000
+      internalID: 3991528123747224742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3eb783299a2cc80800000000000000
+      internalID: -8303888317439810626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6135e73c22c2963c0800000000000000
+      internalID: -4365909835938639082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa18d9600c55a0a60800000000000000
+      internalID: 7641014001020535215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52219a93b55002ad0800000000000000
+      internalID: -2729175484818976219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b883a84a9dbd38430800000000000000
+      internalID: 3784109839736256651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf2433a8daa5c020800000000000000
+      internalID: 2361481427053457357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75251ec364e7ae130800000000000000
+      internalID: 3596826092542972503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bd7b1d7df0947e0800000000000000
+      internalID: -1780874758037447920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671620aa105cbbf30800000000000000
+      internalID: 4592480855972274550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c9357b7aa11d760800000000000000
+      internalID: 7480789763676675144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
