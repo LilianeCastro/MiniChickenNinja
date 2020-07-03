@@ -13,9 +13,12 @@ public class GameController : MonoBehaviour
     private bool isGameplay;
 
     [Header("Global Config")]
-    public float speedGame;
-    public float sizeGround;
     public Text textScore;
+    public float sizeGround;
+    public float scoreToChangeSpeedGame;
+    public float speedGame;
+    public float increaseSpeed;
+    private float currentSpeed;
     private int score;
 
     [Header("Prefabs")]
@@ -26,7 +29,6 @@ public class GameController : MonoBehaviour
     public GameObject[] vFxDestroy;
     public GameObject[] enemyPrefab;
 
-
     public SpriteRenderer[] boardToChangeInPlatform;
 
     void Start() {
@@ -34,6 +36,7 @@ public class GameController : MonoBehaviour
         _Menu = FindObjectOfType(typeof(Menu)) as Menu;
         _Sound = FindObjectOfType(typeof(Sound)) as Sound;
 
+        currentSpeed = speedGame;
         isGameplay = true;
     }
 
@@ -42,10 +45,22 @@ public class GameController : MonoBehaviour
         return Random.Range(0, 100) < percent;
     }
 
+    public float getSpeed()
+    {
+        return currentSpeed;
+    }
+
+    private void setSpeed()
+    {
+        currentSpeed = speedGame + (increaseSpeed * (Mathf.Floor(getScore() / scoreToChangeSpeedGame)));
+    }
+
     public void SetScore(int valuePointsGain)
     {
         score += valuePointsGain;
         textScore.text = $"Score: {score}";
+        setSpeed();
+        print(currentSpeed);
     }
 
     public int getScore()
@@ -86,13 +101,5 @@ public class GameController : MonoBehaviour
         _Sound.playFx(idFx);
     }
 
-    public float getSpeed()
-    {
-        return speedGame;
-    }
 
-    public void setSpeed(float newSpeed)
-    {
-        speedGame = newSpeed;
-    }
 }

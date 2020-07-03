@@ -3163,7 +3163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 75}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1572722806
@@ -3291,7 +3291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: -75}
   m_SizeDelta: {x: 256, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1687910585
@@ -3619,9 +3619,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e87811a5664b342ba55e4ccc698fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedGame: -2.5
-  sizeGround: 8
   textScore: {fileID: 1355130508}
+  sizeGround: 8
+  scoreToChangeSpeedGame: 500
+  speedGame: -3
+  increaseSpeed: -0.25
   groundPrefab:
   - {fileID: 4457611782329844583, guid: a3d85d08ff6db504b8b4ef8a67635a39, type: 3}
   - {fileID: 2295060707898795777, guid: d4845bfa3a9a8b3469a59118d60286df, type: 3}

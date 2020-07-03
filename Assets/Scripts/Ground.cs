@@ -24,11 +24,12 @@ public class Ground : MonoBehaviour
     {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         groundRb = GetComponent<Rigidbody2D>();
+
     }
 
     void Update()
     {
-        groundRb.velocity = Vector2.right * (_GameController.getSpeed() - (_GameController.getScore() * 0.005f));
+        groundRb.velocity = new Vector2(_GameController.getSpeed(), 0);
 
         if(!_GameController.isGameplayActive())
         {
