@@ -8,6 +8,30 @@ TextureImporter:
   - first:
       213: 9065182722929564432
     second: MiniNinjaChicken_CharDeath-Sheet-Sheet_1
+  - first:
+      213: 5468630230542800899
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_0
+  - first:
+      213: -2151019571220867112
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_1
+  - first:
+      213: 5783721305457351062
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_2
+  - first:
+      213: 5856494007397106509
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_3
+  - first:
+      213: 8582400966628706830
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_2
+  - first:
+      213: -4643258292721579138
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_3
+  - first:
+      213: 914838508702015818
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_4
+  - first:
+      213: 2115804972166597648
+    second: MiniNinjaChicken_CharDeath-Sheet-Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,8 +155,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a7fe916999efd6b0800000000000000
-      internalID: -5269236194023114841
+      spriteID: 308577b783a74eb40800000000000000
+      internalID: 5468630230542800899
       vertices: []
       indices: 
       edges: []
@@ -152,8 +176,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01b993838affdcd70800000000000000
-      internalID: 9065182722929564432
+      spriteID: 8d79778b81b0622e0800000000000000
+      internalID: -2151019571220867112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_CharDeath-Sheet-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a8fd72530da1770800000000000000
+      internalID: 8582400966628706830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_CharDeath-Sheet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b81fd0f25df8fb0800000000000000
+      internalID: -4643258292721579138
       vertices: []
       indices: 
       edges: []

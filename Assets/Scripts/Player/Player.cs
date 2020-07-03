@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     [Header("Player Config")]
     public float forceJump;
+    public Transform weaponPos;
     private float initialPosX;
     private float speedY;
 
@@ -42,6 +43,13 @@ public class Player : MonoBehaviour
             playerRb.AddForce(new Vector2(0, forceJump));
         }
 
+        if(Input.GetButtonDown("Fire1"))
+        {
+            _GameController.SetFx(4);
+            playerAnim.SetTrigger("attack");
+            Instantiate(_GameController.weaponPrefab[0], weaponPos.position, weaponPos.rotation);
+        }
+
         playerAnim.SetBool("isGrounded", isGrounded);
         playerAnim.SetFloat("speedY", speedY);
     }
@@ -68,7 +76,7 @@ public class Player : MonoBehaviour
 
     void Death()
     {
-        _GameController.sceneToLoad("gameOver");
+        _GameController.sceneToLoad("EndGame");
     }
 
 }

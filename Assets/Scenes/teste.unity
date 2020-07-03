@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e87811a5664b342ba55e4ccc698fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedGame: -2.5
+  speedGame: 0
   sizeGround: 8
   textScore: {fileID: 1236005158}
   groundPrefab:
@@ -2470,7 +2470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.7999878, y: 12.617004}
+  m_AnchoredPosition: {x: -1.8000488, y: 12.617004}
   m_SizeDelta: {x: 54.14746, y: 25.234253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1677173892

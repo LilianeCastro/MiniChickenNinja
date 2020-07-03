@@ -55,33 +55,33 @@ public class Ground : MonoBehaviour
                 if (_GameController.canSpawnAbovePercent(85))
                 {
                     idChosen = Random.Range(0, _GameController.collectablePrefab.Length);
-                    spawnPrefab(_GameController.collectablePrefab.Length, _GameController.collectablePrefab[idChosen], collectableSpawnPos[0]);
+                    spawnPrefab(_GameController.collectablePrefab[idChosen], collectableSpawnPos[0]);
                 }
 
                 //75% probability of appearing the platform
                 if (_GameController.canSpawnAbovePercent(75))
                 {
                     idChosen = Random.Range(0, _GameController.platformPrefab.Length);
-                    spawnPrefab(_GameController.platformPrefab.Length, _GameController.platformPrefab[idChosen], platformAPos);
+                    spawnPrefab(_GameController.platformPrefab[idChosen], platformAPos);
 
                     //50% probability of spawning a collectible on platform
                     if (_GameController.canSpawnAbovePercent(50))
                     {
                         idChosen = Random.Range(0, _GameController.collectablePrefab.Length);
-                        spawnPrefab(_GameController.collectablePrefab.Length, _GameController.collectablePrefab[idChosen], collectableSpawnPos[1]);
+                        spawnPrefab(_GameController.collectablePrefab[idChosen], collectableSpawnPos[1]);
                     }
 
                     //50% probability of the platform appearing if the 1st is spawned
                     if (_GameController.canSpawnAbovePercent(50))
                     {
                         idChosen = Random.Range(0, _GameController.platformPrefab.Length);
-                        spawnPrefab(_GameController.platformPrefab.Length, _GameController.platformPrefab[idChosen], platformChildrenPos);
+                        spawnPrefab( _GameController.platformPrefab[idChosen], platformChildrenPos);
 
                         //90% probability of spawning a collectible on platform
                         if(_GameController.canSpawnAbovePercent(95))
                         {
                             idChosen = Random.Range(0, _GameController.collectablePrefab.Length);
-                            spawnPrefab(_GameController.collectablePrefab.Length, _GameController.collectablePrefab[idChosen], collectableSpawnPos[2]);
+                            spawnPrefab(_GameController.collectablePrefab[idChosen], collectableSpawnPos[2]);
                         }
                     }
                 }
@@ -95,7 +95,7 @@ public class Ground : MonoBehaviour
 
     }
 
-    void spawnPrefab(int sizePrefab, GameObject platform, Transform posSpawn)
+    void spawnPrefab(GameObject platform, Transform posSpawn)
     {
         GameObject tempPlatform = Instantiate(platform);
         tempPlatform.transform.parent = posSpawn.transform;

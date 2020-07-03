@@ -22,6 +22,10 @@ public class GameController : MonoBehaviour
     public GameObject[] groundPrefab;
     public GameObject[] platformPrefab;
     public GameObject[] collectablePrefab;
+    public GameObject[] weaponPrefab;
+    public GameObject[] vFxDestroy;
+    public GameObject[] enemyPrefab;
+
 
     public SpriteRenderer[] boardToChangeInPlatform;
 

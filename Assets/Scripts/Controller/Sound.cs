@@ -32,22 +32,25 @@ public class Sound : MonoBehaviour
 
     public void playFx(int idFx)
     {
-        if(idFx == 0)
+        switch(idFx)
         {
-            audioSource.PlayOneShot(fx[0]);
+            case 0:
+                audioSource.PlayOneShot(fx[idFx]);
+                break;
+            case 1:
+                audioSource.PlayOneShot(fx[idFx]);
+                break;
+            case 2:
+                audioSource.PlayOneShot(fx[idFx]);
+                break;
+            case 3:
+                audioSource.PlayOneShot(fx[idFx]);
+                break;
+            case 4:
+                audioSource.PlayOneShot(fx[idFx]);
+                break;
+            default:
+                break;
         }
-        else if(idFx == 1)
-        {
-            audioSource.PlayOneShot(fx[1]);
-        }
-        else if(idFx == 2)
-        {
-            audioSource.PlayOneShot(fx[2]);
-        }
-        else
-        {
-            audioSource.PlayOneShot(fx[3]);
-        }
-
     }
 }
