@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: fe54e63ab33a2c04b997a2e0382375f1
+guid: 99a7e6c2aa2936b48bca96f7b8abf87b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4315677116408074387
-    second: plus-Sheet_0
+      213: 205303609832332730
+    second: MiniNinjaChicken_HUD_0
   - first:
-      213: 7320359602223860220
-    second: plus-Sheet_1
+      213: 4262173923715866915
+    second: MiniNinjaChicken_HUD_1
+  - first:
+      213: -1744985872044657253
+    second: MiniNinjaChicken_HUD_2
+  - first:
+      213: -2640143553987442372
+    second: MiniNinjaChicken_HUD_3
+  - first:
+      213: -9041655428567937940
+    second: MiniNinjaChicken_HUD_4
+  - first:
+      213: 2264727557144141039
+    second: MiniNinjaChicken_HUD_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,43 +129,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plus-Sheet_0
+      name: MiniNinjaChicken_HUD_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 32
+        y: 48
+        width: 16
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39019c0d87d54eb30800000000000000
-      internalID: 4315677116408074387
+      spriteID: abd592f9b8269d200800000000000000
+      internalID: 205303609832332730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plus-Sheet_1
+      name: MiniNinjaChicken_HUD_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
+        x: 16
+        y: 48
+        width: 112
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf94ca6f544279560800000000000000
-      internalID: 7320359602223860220
+      spriteID: 32164060a98462b30800000000000000
+      internalID: 4262173923715866915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_HUD_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95f3be389098c7e0800000000000000
+      internalID: -1744985872044657253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_HUD_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 112
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c398a8cfc635c5bd0800000000000000
+      internalID: -2640143553987442372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_HUD_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cc9beda46958280800000000000000
+      internalID: -9041655428567937940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_HUD_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 112
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec5d94d6bded6f10800000000000000
+      internalID: 2264727557144141039
       vertices: []
       indices: 
       edges: []

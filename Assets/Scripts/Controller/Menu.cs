@@ -32,6 +32,7 @@ public class Menu : MonoBehaviour
         if(nameSceneToLoad.Equals("Menu"))
         {
             _GameController.zeroScore();
+            _GameController.fillProgressHUD();
             mainMenu.SetActive(true);
             inGame.SetActive(false);
             gameOver.SetActive(false);
@@ -40,6 +41,7 @@ public class Menu : MonoBehaviour
         else if(nameSceneToLoad.Equals("GamePlay"))
         {
             _GameController.zeroScore();
+            _GameController.fillProgressHUD();
             mainMenu.SetActive(false);
             inGame.SetActive(true);
             gameOver.SetActive(false);

@@ -35,36 +35,56 @@ public class Player : MonoBehaviour
     {
         gameObject.transform.localPosition = new Vector3(initialPosX, transform.localPosition.y, transform.localPosition.z);
 
-        speedY = playerRb.velocity.y;
-
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(_GameController.isGameplayActive())
         {
-            _GameController.SetFx(0);
-            playerRb.AddForce(new Vector2(0, forceJump));
-        }
+            speedY = playerRb.velocity.y;
 
-        if(Input.GetButtonDown("Fire1"))
-        {
-            _GameController.SetFx(4);
-            playerAnim.SetTrigger("attack");
-            Instantiate(_GameController.weaponPrefab[0], weaponPos.position, weaponPos.rotation);
-        }
+            if(Input.GetButtonDown("Jump") && isGrounded)
+            {
+                _GameController.SetFx(0);
+                playerRb.AddForce(new Vector2(0, forceJump));
+            }
 
-        playerAnim.SetBool("isGrounded", isGrounded);
-        playerAnim.SetFloat("speedY", speedY);
+            if(Input.GetButtonDown("Fire1"))
+            {
+                if(_GameController.hasKunai())
+                {
+                    playerAnim.SetTrigger("attack");
+                    _GameController.SetFx(4);
+                    _GameController.setKunaiProgress(-3);
+                    Instantiate(_GameController.weaponPrefab[0], weaponPos.position, weaponPos.rotation);
+                }
+            }
+
+            if(Input.GetButtonDown("Fire2"))
+            {
+                if(_GameController.hasBomb())
+                {
+                    playerAnim.SetTrigger("bomb");
+                    _GameController.SetFx(4);
+                    _GameController.setBombProgress(-10);
+                    Instantiate(_GameController.weaponPrefab[1], weaponPos.position, weaponPos.rotation);
+                }
+            }
+
+            playerAnim.SetBool("isGrounded", isGrounded);
+            playerAnim.SetFloat("speedY", speedY);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         switch(other.gameObject.tag){
             case "collectable":
                 _GameController.SetFx(1);
-                _GameController.SetScore(10);
-                Destroy(other.gameObject, 0.5f);
+                _GameController.SetScore(1);
+                _GameController.setKunaiProgress(1);
+                Destroy(other.gameObject);
                 break;
             case "collectableDouble":
                 _GameController.SetFx(2);
-                _GameController.SetScore(20);
-                Destroy(other.gameObject, 0.5f);
+                _GameController.SetScore(1);
+                _GameController.setBombProgress(2);
+                Destroy(other.gameObject);
                 break;
             case "damage":
                 _GameController.SetFx(3);

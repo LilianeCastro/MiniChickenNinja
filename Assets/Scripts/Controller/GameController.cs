@@ -14,6 +14,10 @@ public class GameController : MonoBehaviour
 
     [Header("Global Config")]
     public Text textScore;
+    public Slider kunaiProgress;
+    public Slider bombProgress;
+    public int valueProgressKunai;
+    public int valueProgressBomb;
     public float sizeGround;
     public float scoreToChangeSpeedGame;
     public float speedGame;
@@ -28,6 +32,7 @@ public class GameController : MonoBehaviour
     public GameObject[] weaponPrefab;
     public GameObject[] vFxDestroy;
     public GameObject[] enemyPrefab;
+    public GameObject[] scoreAnimPrefab;
 
     public SpriteRenderer[] boardToChangeInPlatform;
 
@@ -58,9 +63,8 @@ public class GameController : MonoBehaviour
     public void SetScore(int valuePointsGain)
     {
         score += valuePointsGain;
-        textScore.text = $"Score: {score}";
+        textScore.text = $"{score}";
         setSpeed();
-        print(currentSpeed);
     }
 
     public int getScore()
@@ -74,6 +78,32 @@ public class GameController : MonoBehaviour
         SetScore(score);
     }
 
+    public void fillProgressHUD()
+    {
+        kunaiProgress.value = valueProgressKunai;
+        bombProgress.value = valueProgressBomb;
+    }
+
+    public bool hasKunai()
+    {
+        return kunaiProgress.value > 2;
+    }
+
+    public bool hasBomb()
+    {
+        return bombProgress.value == valueProgressBomb;
+    }
+
+    public void setKunaiProgress(int value)
+    {
+        kunaiProgress.value += value;
+    }
+
+    public void setBombProgress(int value)
+    {
+        bombProgress.value += value;
+    }
+
     public void sceneToLoad(string nameSceneToLoad)
     {
         _Menu.sceneToLoad(nameSceneToLoad);
@@ -82,8 +112,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
-        isGameplay = false;
-
+        setGamePlayActive(false);
     }
 
     public bool isGameplayActive()

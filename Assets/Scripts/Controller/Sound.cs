@@ -49,6 +49,9 @@ public class Sound : MonoBehaviour
             case 4:
                 audioSource.PlayOneShot(fx[idFx]);
                 break;
+            case 5:
+                audioSource.PlayOneShot(fx[idFx]);
+                break;
             default:
                 break;
         }
