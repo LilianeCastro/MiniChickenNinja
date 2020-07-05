@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
 
     private string currentScene;
     private bool isGameplay;
+    private int layerAnimPlayer;
 
     [Header("Global Config")]
     public Text textScore;
@@ -37,6 +38,8 @@ public class GameController : MonoBehaviour
     public GameObject[] scoreAnimPrefab;
 
     public SpriteRenderer[] boardToChangeInPlatform;
+    public Image[] playerDeathCurrentSprite;
+
 
     void Start() {
         _Ground = FindObjectOfType(typeof(Ground)) as Ground;
@@ -152,5 +155,13 @@ public class GameController : MonoBehaviour
         _Sound.playFx(idFx);
     }
 
+    public void setLayerAnimPlayer(int layerId)
+    {
+        layerAnimPlayer = layerId;
+    }
 
+    public int getLayerAnimPlayer()
+    {
+        return layerAnimPlayer;
+    }
 }

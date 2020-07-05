@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class Menu : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class Menu : MonoBehaviour
     public GameObject gameOver;
     public GameObject credit;
     public GameObject help;
+
+    public Image spriteRendererNinjaGameOver;
 
     void Start() {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
@@ -48,6 +52,7 @@ public class Menu : MonoBehaviour
         }
         else if(nameSceneToLoad.Equals("EndGame"))
         {
+            spriteRendererNinjaGameOver.sprite = _GameController.playerDeathCurrentSprite[_GameController.getLayerAnimPlayer()].sprite;
             mainMenu.SetActive(false);
             inGame.SetActive(true);
             gameOver.SetActive(true);

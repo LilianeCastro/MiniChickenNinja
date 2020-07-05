@@ -1271,6 +1271,7 @@ MonoBehaviour:
   gameOver: {fileID: 1807275573}
   credit: {fileID: 1144452393}
   help: {fileID: 2078448445}
+  spriteRendererNinjaGameOver: {fileID: 457887327}
 --- !u!1 &588654391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,6 +3688,15 @@ MonoBehaviour:
   - {fileID: 7902706002792885146, guid: 75560f410e25c484ab2f736546d9f4fb, type: 3}
   - {fileID: 3137096148501877410, guid: 7d683939887ad274cb2c1f7c38ce3f0f, type: 3}
   - {fileID: 5653506089422257419, guid: 7497d1583c99c11429be375255cd6da6, type: 3}
+  playerDeathCurrentSprite:
+  - {fileID: 952414790609617583, guid: 0cc8f6f7e3e97b04aa2f2cf29ddb5e15, type: 3}
+  - {fileID: 3291868304967307471, guid: cc0c54c11b387204aa7ec91979e35897, type: 3}
+  - {fileID: 4312824594418276949, guid: 42821f2014f207342a91427134a3c611, type: 3}
+  - {fileID: 7540558596991950424, guid: b7ed6216dfd542b4280c5b6d1ba4d3de, type: 3}
+  - {fileID: 5009280260430992255, guid: 6fc2e8b576fd8b7449b07b67c15196d5, type: 3}
+  - {fileID: 7686330906941373028, guid: 23ce722411c72724885aae864f320679, type: 3}
+  - {fileID: 4488181857499751579, guid: c4020ad0548a40a4c8c203809d085ea0, type: 3}
+  - {fileID: 957670162984859348, guid: 617849ed15bc3c3448c069e10ff28ff9, type: 3}
 --- !u!1 &1515575950
 GameObject:
   m_ObjectHideFlags: 0

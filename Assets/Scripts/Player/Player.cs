@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
 
         chosenSkinLayer = Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
+
+        _GameController.setLayerAnimPlayer(chosenSkinLayer);
     }
 
     void FixedUpdate() {
