@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public Transform weaponPos;
     private float initialPosX;
     private float speedY;
+    private int chosenSkinLayer;
 
     [Header("Ground Config")]
     public Transform groundCheck;
@@ -25,9 +26,10 @@ public class Player : MonoBehaviour
         playerAnim = GetComponent<Animator>();
 
         initialPosX = transform.localPosition.x;
+        playerAnim.SetLayerWeight(0, 0);
 
-        //playerAnim.SetLayerWeight(0, 0);
-        playerAnim.SetLayerWeight(1, 1);
+        chosenSkinLayer = Random.Range(0,playerAnim.layerCount);
+        playerAnim.SetLayerWeight(chosenSkinLayer, 1);
     }
 
     void FixedUpdate() {
