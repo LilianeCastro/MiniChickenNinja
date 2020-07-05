@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
 
     [Header("Global Config")]
     public Text textScore;
+    public Text textHighScore;
     public Slider kunaiProgress;
     public Slider bombProgress;
     public int valueProgressKunai;
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
     public float increaseSpeed;
     private float currentSpeed;
     private int score;
+    private int highScore;
 
     [Header("Prefabs")]
     public GameObject[] groundPrefab;
@@ -43,6 +45,8 @@ public class GameController : MonoBehaviour
 
         currentSpeed = speedGame;
         isGameplay = true;
+        highScore = PlayerPrefs.GetInt("highScore");
+        textHighScore.text = "High Score: " + highScore.ToString();
     }
 
     public bool canSpawnAbovePercent(int percent)
@@ -72,6 +76,23 @@ public class GameController : MonoBehaviour
         return score;
     }
 
+    public int getHighScore()
+    {
+        return highScore;
+    }
+
+    public void updateHighScore()
+    {
+        if(highScore < score)
+        {
+            highScore = score;
+            PlayerPrefs.SetInt("highScore", score);
+
+            highScore = PlayerPrefs.GetInt("highScore");
+            textHighScore.text = "High Score: " + highScore.ToString();
+        }
+
+    }
     public void zeroScore()
     {
         score = 0;
@@ -113,6 +134,7 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         setGamePlayActive(false);
+        updateHighScore();
     }
 
     public bool isGameplayActive()

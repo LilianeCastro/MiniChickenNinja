@@ -13,7 +13,7 @@ public class Menu : MonoBehaviour
     public GameObject inGame;
     public GameObject gameOver;
     public GameObject credit;
-
+    public GameObject help;
 
     void Start() {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
@@ -65,5 +65,17 @@ public class Menu : MonoBehaviour
     {
         mainMenu.SetActive(true);
         credit.SetActive(false);
+    }
+
+    public void ActivateHelp()
+    {
+        mainMenu.SetActive(false);
+        help.SetActive(true);
+    }
+
+    public void DisableHelp()
+    {
+        mainMenu.SetActive(true);
+        help.SetActive(false);
     }
 }

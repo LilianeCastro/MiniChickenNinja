@@ -25,6 +25,9 @@ public class Player : MonoBehaviour
         playerAnim = GetComponent<Animator>();
 
         initialPosX = transform.localPosition.x;
+
+        //playerAnim.SetLayerWeight(0, 0);
+        playerAnim.SetLayerWeight(1, 1);
     }
 
     void FixedUpdate() {
