@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
                 {
                     playerAnim.SetTrigger("attack");
                     _GameController.SetFx(4);
-                    _GameController.setKunaiProgress(-3);
+                    _GameController.setKunaiProgress(-30);
                     Instantiate(_GameController.weaponPrefab[0], weaponPos.position, weaponPos.rotation);
                 }
             }
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
                 {
                     playerAnim.SetTrigger("bomb");
                     _GameController.SetFx(4);
-                    _GameController.setBombProgress(-10);
+                    _GameController.setBombProgress(-100);
                     Instantiate(_GameController.weaponPrefab[1], weaponPos.position, weaponPos.rotation);
                 }
             }
@@ -84,13 +84,13 @@ public class Player : MonoBehaviour
             case "collectable":
                 _GameController.SetFx(1);
                 _GameController.SetScore(1);
-                _GameController.setKunaiProgress(1);
+                _GameController.setKunaiProgress(10);
                 Destroy(other.gameObject);
                 break;
             case "collectableDouble":
                 _GameController.SetFx(2);
                 _GameController.SetScore(1);
-                _GameController.setBombProgress(2);
+                _GameController.setBombProgress(20);
                 Destroy(other.gameObject);
                 break;
             case "damage":

@@ -8,7 +8,7 @@ public class ExplosionBomb : MonoBehaviour
 
     private void Start() {
         _cameraShaker = FindObjectOfType(typeof(CameraShaker)) as CameraShaker;
-        StartCoroutine(_cameraShaker.shake(.1f, .15f));
+        StartCoroutine(_cameraShaker.shake(.1f, .2f));
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

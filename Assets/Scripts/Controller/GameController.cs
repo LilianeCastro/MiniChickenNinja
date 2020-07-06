@@ -52,6 +52,11 @@ public class GameController : MonoBehaviour
         textHighScore.text = "High Score: " + highScore.ToString();
     }
 
+    private void FixedUpdate() {
+        kunaiProgress.value += Time.deltaTime;
+        bombProgress.value += Time.deltaTime;
+    }
+
     public bool canSpawnAbovePercent(int percent)
     {
         return Random.Range(0, 100) < percent;
