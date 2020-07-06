@@ -16,8 +16,9 @@ public class Menu : MonoBehaviour
     public GameObject gameOver;
     public GameObject credit;
     public GameObject help;
+    public GameObject settings;
 
-    public Image spriteRendererNinjaGameOver;
+    public Image[] spriteRendererCanvas;
 
     void Start() {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
@@ -37,6 +38,7 @@ public class Menu : MonoBehaviour
         {
             _GameController.zeroScore();
             _GameController.fillProgressHUD();
+            _GameController.getAudioSourceVol();
             mainMenu.SetActive(true);
             inGame.SetActive(false);
             gameOver.SetActive(false);
@@ -52,7 +54,7 @@ public class Menu : MonoBehaviour
         }
         else if(nameSceneToLoad.Equals("EndGame"))
         {
-            spriteRendererNinjaGameOver.sprite = _GameController.playerDeathCurrentSprite[_GameController.getLayerAnimPlayer()].sprite;
+            spriteRendererCanvas[0].sprite = _GameController.playerDeathCurrentSprite[_GameController.getLayerAnimPlayer()].sprite;
             mainMenu.SetActive(false);
             inGame.SetActive(true);
             gameOver.SetActive(true);
@@ -82,5 +84,44 @@ public class Menu : MonoBehaviour
     {
         mainMenu.SetActive(true);
         help.SetActive(false);
+    }
+
+    public void ActivateSettings()
+    {
+        currentImgSound();
+        mainMenu.SetActive(false);
+        settings.SetActive(true);
+        StartCoroutine("settingsConfig");
+
+    }
+
+    public void DisableSettings()
+    {
+        _GameController.setAudioSourceVol(_Sound.getAudioSourceVol());
+        mainMenu.SetActive(true);
+        settings.SetActive(false);
+        StopCoroutine("settingsConfig");
+    }
+
+    IEnumerator settingsConfig()
+    {
+        yield return new WaitForSeconds(0.1f);
+        currentImgSound();
+
+        _Sound.setAudioSourceVol(_GameController.getAudioSourceVol());
+
+        StartCoroutine("settingsConfig");
+    }
+
+    void currentImgSound()
+    {
+        if(_Sound.getAudioSourceVol() > 0)
+        {
+            spriteRendererCanvas[1].sprite = spriteRendererCanvas[2].sprite;
+        }
+        else
+        {
+            spriteRendererCanvas[1].sprite = spriteRendererCanvas[3].sprite;
+        }
     }
 }

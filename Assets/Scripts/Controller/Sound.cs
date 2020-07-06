@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Sound : MonoBehaviour
 {
+    private GameController _GameController;
     public AudioSource audioSource;
 
     public AudioClip titleSound;
@@ -12,6 +13,10 @@ public class Sound : MonoBehaviour
     public AudioClip gameOverSound;
 
     public AudioClip[] fx;
+
+    private void Start() {
+        _GameController = FindObjectOfType(typeof(GameController)) as GameController;
+    }
 
     public void changeSong(string sceneName)
     {
@@ -55,5 +60,15 @@ public class Sound : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public float getAudioSourceVol()
+    {
+        return audioSource.volume;
+    }
+
+    public void setAudioSourceVol(float newVol)
+    {
+        audioSource.volume = newVol;
     }
 }

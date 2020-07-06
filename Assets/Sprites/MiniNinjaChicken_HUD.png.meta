@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 2264727557144141039
     second: MiniNinjaChicken_HUD_5
+  - first:
+      213: -8804850748407914581
+    second: MiniNinjaChicken_HUD_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -250,6 +253,27 @@ TextureImporter:
       bones: []
       spriteID: fec5d94d6bded6f10800000000000000
       internalID: 2264727557144141039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_HUD_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 112
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf50d8f4e2eec580800000000000000
+      internalID: -8804850748407914581
       vertices: []
       indices: 
       edges: []

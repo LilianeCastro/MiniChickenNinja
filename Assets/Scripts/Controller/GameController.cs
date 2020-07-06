@@ -28,6 +28,10 @@ public class GameController : MonoBehaviour
     private int score;
     private int highScore;
 
+    [Header("Global Config")]
+    public Slider soundVolume;
+    public float initialValueSound;
+
     [Header("Prefabs")]
     public GameObject[] groundPrefab;
     public GameObject[] platformPrefab;
@@ -48,13 +52,20 @@ public class GameController : MonoBehaviour
 
         currentSpeed = speedGame;
         isGameplay = true;
+
         highScore = PlayerPrefs.GetInt("highScore");
         textHighScore.text = "High Score: " + highScore.ToString();
+
+        soundVolume.value = PlayerPrefs.GetFloat("soundVol");
+        _Sound.setAudioSourceVol(PlayerPrefs.GetFloat("soundVol"));
     }
 
     private void FixedUpdate() {
-        kunaiProgress.value += Time.deltaTime;
-        bombProgress.value += Time.deltaTime;
+        if(isGameplay)
+        {
+            kunaiProgress.value += Time.deltaTime;
+            bombProgress.value += Time.deltaTime;
+        }
     }
 
     public bool canSpawnAbovePercent(int percent)
@@ -115,7 +126,7 @@ public class GameController : MonoBehaviour
 
     public bool hasKunai()
     {
-        return kunaiProgress.value > 2;
+        return kunaiProgress.value > 29;
     }
 
     public bool hasBomb()
@@ -131,6 +142,17 @@ public class GameController : MonoBehaviour
     public void setBombProgress(int value)
     {
         bombProgress.value += value;
+    }
+
+    public void setAudioSourceVol(float value)
+    {
+        PlayerPrefs.SetFloat("soundVol", value);
+        soundVolume.value = PlayerPrefs.GetFloat("soundVol", value);
+    }
+
+    public float getAudioSourceVol()
+    {
+        return soundVolume.value;
     }
 
     public void sceneToLoad(string nameSceneToLoad)
