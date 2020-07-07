@@ -112,6 +112,14 @@ public class GameController : MonoBehaviour
         }
 
     }
+
+    public void clearHighScore()
+    {
+        PlayerPrefs.SetInt("highScore", 0);
+        highScore = PlayerPrefs.GetInt("highScore");
+        textHighScore.text = "High Score: " + highScore.ToString();
+    }
+
     public void zeroScore()
     {
         score = 0;

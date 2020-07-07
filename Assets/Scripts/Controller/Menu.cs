@@ -11,12 +11,10 @@ public class Menu : MonoBehaviour
     private Sound _Sound;
     private Persist _Persist;
 
+    [Header("Panel Scene Config")]
     public GameObject mainMenu;
     public GameObject inGame;
     public GameObject gameOver;
-    public GameObject credit;
-    public GameObject help;
-    public GameObject settings;
 
     public Image[] spriteRendererCanvas;
 
@@ -34,82 +32,55 @@ public class Menu : MonoBehaviour
     public void sceneToLoad(string nameSceneToLoad)
     {
         _Sound.changeSong(nameSceneToLoad);
-        if(nameSceneToLoad.Equals("Menu"))
+
+        switch(nameSceneToLoad)
         {
-            _GameController.zeroScore();
-            _GameController.fillProgressHUD();
-            _GameController.getAudioSourceVol();
-            mainMenu.SetActive(true);
-            inGame.SetActive(false);
-            gameOver.SetActive(false);
-            Destroy(_Persist.gameObject);
+            case "Menu":
+                Destroy(_Persist.gameObject);
+                _GameController.zeroScore();
+                _GameController.fillProgressHUD();
+                _GameController.getAudioSourceVol();
+                mainMenu.SetActive(true);
+                inGame.SetActive(false);
+                gameOver.SetActive(false);
+
+                break;
+            case "GamePlay":
+                _GameController.zeroScore();
+                _GameController.fillProgressHUD();
+                mainMenu.SetActive(false);
+                inGame.SetActive(true);
+                gameOver.SetActive(false);
+                break;
+            case "EndGame":
+                spriteRendererCanvas[0].sprite = _GameController.playerDeathCurrentSprite[_GameController.getLayerAnimPlayer()].sprite;
+                mainMenu.SetActive(false);
+                inGame.SetActive(true);
+                gameOver.SetActive(true);
+                break;
         }
-        else if(nameSceneToLoad.Equals("GamePlay"))
-        {
-            _GameController.zeroScore();
-            _GameController.fillProgressHUD();
-            mainMenu.SetActive(false);
-            inGame.SetActive(true);
-            gameOver.SetActive(false);
-        }
-        else if(nameSceneToLoad.Equals("EndGame"))
-        {
-            spriteRendererCanvas[0].sprite = _GameController.playerDeathCurrentSprite[_GameController.getLayerAnimPlayer()].sprite;
-            mainMenu.SetActive(false);
-            inGame.SetActive(true);
-            gameOver.SetActive(true);
-        }
+
         SceneManager.LoadSceneAsync(nameSceneToLoad);
-    }
-
-    public void ActivateCredit()
-    {
-        mainMenu.SetActive(false);
-        credit.SetActive(true);
-    }
-
-    public void DisableCredit()
-    {
-        mainMenu.SetActive(true);
-        credit.SetActive(false);
-    }
-
-    public void ActivateHelp()
-    {
-        mainMenu.SetActive(false);
-        help.SetActive(true);
-    }
-
-    public void DisableHelp()
-    {
-        mainMenu.SetActive(true);
-        help.SetActive(false);
     }
 
     public void ActivateSettings()
     {
         currentImgSound();
-        mainMenu.SetActive(false);
-        settings.SetActive(true);
         StartCoroutine("settingsConfig");
-
     }
 
     public void DisableSettings()
     {
         _GameController.setAudioSourceVol(_Sound.getAudioSourceVol());
-        mainMenu.SetActive(true);
-        settings.SetActive(false);
         StopCoroutine("settingsConfig");
     }
 
     IEnumerator settingsConfig()
     {
         yield return new WaitForSeconds(0.1f);
+
         currentImgSound();
-
         _Sound.setAudioSourceVol(_GameController.getAudioSourceVol());
-
         StartCoroutine("settingsConfig");
     }
 
@@ -124,4 +95,11 @@ public class Menu : MonoBehaviour
             spriteRendererCanvas[1].sprite = spriteRendererCanvas[3].sprite;
         }
     }
+
+    public void clearHighScore()
+    {
+        _GameController.clearHighScore();
+    }
+
+
 }
