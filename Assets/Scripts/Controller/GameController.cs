@@ -53,11 +53,16 @@ public class GameController : MonoBehaviour
         currentSpeed = speedGame;
         isGameplay = true;
 
-        highScore = PlayerPrefs.GetInt("highScore");
-        textHighScore.text = "High Score: " + highScore.ToString();
+        if(PlayerPrefs.HasKey("soundVol"))
+        {
+            soundVolume.value = PlayerPrefs.GetFloat("soundVol");
+            _Sound.setAudioSourceVol(PlayerPrefs.GetFloat("soundVol"));
 
-        soundVolume.value = PlayerPrefs.GetFloat("soundVol");
-        _Sound.setAudioSourceVol(PlayerPrefs.GetFloat("soundVol"));
+        }else
+        {
+            soundVolume.value = initialValueSound;
+        }
+
     }
 
     private void FixedUpdate() {

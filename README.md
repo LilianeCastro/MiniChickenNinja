@@ -20,7 +20,6 @@ Use your tools wisely, collect the eggs so your kunais can load faster, collect 
 ## [Play on Itch.io](https://lilianecastro.itch.io/mini-ninja)
 
 
-
 ## Features
 
 - Kunai attack, left-click can attack up to 3 kunai. Pick up eggs to reload attacks faster.
