@@ -216,6 +216,7 @@ public class GameController : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("highScore")==0)
         {
+            updateHighScore();
             return true;
         }
         return false;
