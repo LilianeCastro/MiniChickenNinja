@@ -6,6 +6,8 @@
 
 ![Mini Chicken Ninja Gif](/Doc/MiniChickenNinjaGif.gif)
 
+## [Play on Itch.io](https://lilianecastro.itch.io/mini-ninja)
+
 ## Description
 
 > It's a ninja, and it has to save his little brothers in this infinite run adventure.
@@ -15,9 +17,6 @@ Find enemies along the way, be careful not to trip over the rocks, fall into the
 Use your kunai to destroy an enemy, or a bomb for an area explosion, it'll be easier to pass from parts with several enemies together.
 
 Use your tools wisely, collect the eggs so your kunais can load faster, collect the chicks so you can use your bomb.
-
-
-## [Play on Itch.io](https://lilianecastro.itch.io/mini-ninja)
 
 
 ## Features

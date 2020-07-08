@@ -15,6 +15,7 @@ public class Menu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject inGame;
     public GameObject gameOver;
+    public GameObject panelTutorial;
 
     public Image[] spriteRendererCanvas;
 
@@ -36,6 +37,7 @@ public class Menu : MonoBehaviour
         switch(nameSceneToLoad)
         {
             case "Menu":
+                _GameController.updateHighScore();
                 Destroy(_Persist.gameObject);
                 _GameController.zeroScore();
                 _GameController.fillProgressHUD();
@@ -43,9 +45,9 @@ public class Menu : MonoBehaviour
                 mainMenu.SetActive(true);
                 inGame.SetActive(false);
                 gameOver.SetActive(false);
-
                 break;
             case "GamePlay":
+                StartCoroutine("tutorial");
                 _GameController.zeroScore();
                 _GameController.fillProgressHUD();
                 mainMenu.SetActive(false);
@@ -99,6 +101,20 @@ public class Menu : MonoBehaviour
     public void clearHighScore()
     {
         _GameController.clearHighScore();
+    }
+
+    IEnumerator tutorial()
+    {
+        if(_GameController.isTheFirstTimeInGame())
+        {
+            panelTutorial.SetActive(true);
+
+            yield return new WaitForSeconds(2.5f);
+
+            panelTutorial.SetActive(false);
+        }
+
+        StopCoroutine("tutorial");
     }
 
 

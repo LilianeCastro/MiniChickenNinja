@@ -63,6 +63,7 @@ public class GameController : MonoBehaviour
             soundVolume.value = initialValueSound;
         }
 
+        isTheFirstTimeInGame();
     }
 
     private void FixedUpdate() {
@@ -100,6 +101,12 @@ public class GameController : MonoBehaviour
         return score;
     }
 
+    public void zeroScore()
+    {
+        score = 0;
+        SetScore(score);
+    }
+
     public int getHighScore()
     {
         return highScore;
@@ -107,6 +114,12 @@ public class GameController : MonoBehaviour
 
     public void updateHighScore()
     {
+        if(PlayerPrefs.GetInt("highScore")!=0)
+        {
+            highScore = PlayerPrefs.GetInt("highScore");
+            textHighScore.text = "High Score: " + highScore.ToString();
+        }
+
         if(highScore < score)
         {
             highScore = score;
@@ -122,13 +135,7 @@ public class GameController : MonoBehaviour
     {
         PlayerPrefs.SetInt("highScore", 0);
         highScore = PlayerPrefs.GetInt("highScore");
-        textHighScore.text = "High Score: " + highScore.ToString();
-    }
-
-    public void zeroScore()
-    {
-        score = 0;
-        SetScore(score);
+        textHighScore.text = "High Score: " + 0;
     }
 
     public void fillProgressHUD()
@@ -203,5 +210,14 @@ public class GameController : MonoBehaviour
     public int getLayerAnimPlayer()
     {
         return layerAnimPlayer;
+    }
+
+    public bool isTheFirstTimeInGame()
+    {
+        if(PlayerPrefs.GetInt("highScore")==0)
+        {
+            return true;
+        }
+        return false;
     }
 }

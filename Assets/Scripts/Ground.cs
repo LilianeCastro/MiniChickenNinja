@@ -24,7 +24,6 @@ public class Ground : MonoBehaviour
     {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         groundRb = GetComponent<Rigidbody2D>();
-
     }
 
     void Update()

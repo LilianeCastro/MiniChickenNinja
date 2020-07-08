@@ -164,6 +164,30 @@ TextureImporter:
   - first:
       213: -5283879697345630973
     second: MiniNinjaChicken_Tiles-Sheet_29
+  - first:
+      213: -6052002416123388339
+    second: MiniNinjaChicken_Tiles-Sheet_24
+  - first:
+      213: -3868648325257273833
+    second: MiniNinjaChicken_Tiles-Sheet_25
+  - first:
+      213: 6905288255324586050
+    second: MiniNinjaChicken_Tiles-Sheet_26
+  - first:
+      213: -1762691994025217982
+    second: MiniNinjaChicken_Tiles-Sheet_27
+  - first:
+      213: 2345299758103532943
+    second: MiniNinjaChicken_Tiles-Sheet_28
+  - first:
+      213: 1204715890459027889
+    second: MiniNinjaChicken_Tiles-Sheet_29
+  - first:
+      213: 4117530585408484830
+    second: MiniNinjaChicken_Tiles-Sheet_30
+  - first:
+      213: 6936444213129296466
+    second: MiniNinjaChicken_Tiles-Sheet_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -898,6 +922,48 @@ TextureImporter:
       bones: []
       spriteID: 30da0d31963eba6b0800000000000000
       internalID: -5283879697345630973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed534177048642930800000000000000
+      internalID: 4117530585408484830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNinjaChicken_Tiles-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ab2efc243334060800000000000000
+      internalID: 6936444213129296466
       vertices: []
       indices: 
       edges: []
