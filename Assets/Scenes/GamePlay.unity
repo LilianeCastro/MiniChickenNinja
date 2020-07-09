@@ -433,6 +433,7 @@ MonoBehaviour:
   - {fileID: 2581019622089312058, guid: 70c247eff1c442c4ba1811dafc5cd368, type: 3}
   - {fileID: 1497331786674236754, guid: f5a4d0d2f500b9c4b9880cac146f4b5c, type: 3}
   - {fileID: 7486846050819127850, guid: 1384f22aa08de7745bdc281b2aa1b959, type: 3}
+  - {fileID: 1565594866118683416, guid: def650ee39805c948a2625183442ce24, type: 3}
   weaponPrefab:
   - {fileID: 775842896742663145, guid: eb672d002c4f9024994528fc9c2d1c1d, type: 3}
   - {fileID: 70611201483252781, guid: 007a9e5514aa92e40bafe42c382e5fc9, type: 3}
