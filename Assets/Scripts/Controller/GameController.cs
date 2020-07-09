@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
     private float currentSpeed;
     private int score;
     private int highScore;
+    private bool isNewScore;
 
     [Header("Global Config")]
     public Slider soundVolume;
@@ -109,26 +110,29 @@ public class GameController : MonoBehaviour
         SetScore(score);
     }
 
-    public int getHighScore()
+    public bool isNewHighScore()
     {
-        return highScore;
+        return isNewScore;
     }
 
     public void updateHighScore()
     {
         if(PlayerPrefs.GetInt("highScore")!=0)
         {
+            isNewScore = false;
+
             highScore = PlayerPrefs.GetInt("highScore");
             textHighScore.text = "High Score: " + highScore.ToString();
         }
 
         if(highScore < score)
         {
-            highScore = score;
+            isNewScore = true;
+
             PlayerPrefs.SetInt("highScore", score);
 
             highScore = PlayerPrefs.GetInt("highScore");
-            textHighScore.text = "High Score: " + highScore.ToString();
+            textHighScore.text = "New High Score: " + highScore.ToString();
         }
 
     }

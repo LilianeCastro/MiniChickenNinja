@@ -103,7 +103,6 @@ public class Player : MonoBehaviour
 
     void Death()
     {
-        _GameController.updateHighScore();
         _GameController.sceneToLoad("EndGame");
     }
 

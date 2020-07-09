@@ -11,6 +11,8 @@ public class Menu : MonoBehaviour
     private Sound _Sound;
     private Persist _Persist;
 
+    private Animator canvasAnim;
+
     [Header("Panel Scene Config")]
     public GameObject mainMenu;
     public GameObject inGame;
@@ -23,6 +25,8 @@ public class Menu : MonoBehaviour
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _Sound = FindObjectOfType(typeof(Sound)) as Sound;
         _Persist = FindObjectOfType(typeof(Persist)) as Persist;
+
+        canvasAnim = gameOver.GetComponent<Animator>();
     }
 
     public void exitGame()
@@ -37,7 +41,6 @@ public class Menu : MonoBehaviour
         switch(nameSceneToLoad)
         {
             case "Menu":
-                _GameController.updateHighScore();
                 Destroy(_Persist.gameObject);
                 _GameController.zeroScore();
                 _GameController.fillProgressHUD();
@@ -57,8 +60,14 @@ public class Menu : MonoBehaviour
             case "EndGame":
                 spriteRendererCanvas[0].sprite = _GameController.playerDeathCurrentSprite[_GameController.getLayerAnimPlayer()].sprite;
                 mainMenu.SetActive(false);
-                inGame.SetActive(true);
+                inGame.SetActive(false);
                 gameOver.SetActive(true);
+
+                if(_GameController.isNewHighScore())
+                {
+                    canvasAnim.SetTrigger("highScore");
+                }
+
                 break;
         }
 

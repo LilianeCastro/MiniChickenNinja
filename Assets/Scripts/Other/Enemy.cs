@@ -21,21 +21,18 @@ public class Enemy : MonoBehaviour
     }
 
     private void Update() {
-        if(enemyType==EnemyType.AmangownAttack)
+
+        switch(enemyType)
         {
+            case EnemyType.AmangownAttack:
             float dist = Vector3.Distance(_Player.transform.position, transform.position);
             if(dist < 2 && !isAttack)
             {
                 animator.SetTrigger("attack");
                 isAttack = true;
             }
+            break;
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            Destroy(this.gameObject);
-        }
     }
 }
