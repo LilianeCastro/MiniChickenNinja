@@ -17,7 +17,9 @@ public class GameController : MonoBehaviour
     public Text textScore;
     public Text textHighScore;
     public Slider kunaiProgress;
+    public Animator animKunaiProgress;
     public Slider bombProgress;
+    public Animator animBombProgress;
     public int valueProgressKunai;
     public int valueProgressBomb;
     public float sizeGround;
@@ -157,11 +159,19 @@ public class GameController : MonoBehaviour
     public void setKunaiProgress(int value)
     {
         kunaiProgress.value += value;
+        if(kunaiProgress.value != valueProgressKunai)
+        {
+            animKunaiProgress.SetTrigger("plus");
+        }
     }
 
     public void setBombProgress(int value)
     {
         bombProgress.value += value;
+        if(bombProgress.value != valueProgressBomb)
+        {
+            animBombProgress.SetTrigger("plus");
+        }
     }
 
     public void setAudioSourceVol(float value)
