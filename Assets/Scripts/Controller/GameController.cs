@@ -119,8 +119,6 @@ public class GameController : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("highScore")!=0)
         {
-            isNewScore = false;
-
             highScore = PlayerPrefs.GetInt("highScore");
             textHighScore.text = "High Score: " + highScore.ToString();
         }
@@ -133,6 +131,9 @@ public class GameController : MonoBehaviour
 
             highScore = PlayerPrefs.GetInt("highScore");
             textHighScore.text = "New High Score: " + highScore.ToString();
+        }
+        else{
+            isNewScore = false;
         }
 
     }
