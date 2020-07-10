@@ -65,7 +65,11 @@ public class Menu : MonoBehaviour
 
                 if(_GameController.isNewHighScore())
                 {
+                    _GameController.SetFx(6);
                     canvasAnim.SetTrigger("highScore");
+                }else
+                {
+                    _GameController.SetFx(7);
                 }
 
                 break;

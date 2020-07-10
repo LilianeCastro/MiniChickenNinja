@@ -3951,6 +3951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1193759501}
+  - component: {fileID: 1193759502}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -3982,6 +3983,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -0.000015258789}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1193759502
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193759500}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 45ca5c97707270740a8beb837911d80b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1216583906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4095,7 +4115,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -32}
-  m_SizeDelta: {x: 512, y: 64}
+  m_SizeDelta: {x: 850, y: 64}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1233190940
 MonoBehaviour:
@@ -4133,11 +4153,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 49e1b72585fc7814399266f2d5cc72cb, type: 3}
-    m_FontSize: 32
+    m_FontSize: 52
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 87
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -5885,6 +5905,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 698d24c2a9f2f5741ba6621074f1410b, type: 3}
   - {fileID: 8300000, guid: c8775334f1f65f34dbf38f02fedd41af, type: 3}
   - {fileID: 8300000, guid: 6c2669e45ea92694691ed5aab358d7f3, type: 3}
+  - {fileID: 8300000, guid: 584edf531ed98c647b16cbcda3a46791, type: 3}
+  - {fileID: 8300000, guid: 899432bbdfa1f81438076daa89e33166, type: 3}
 --- !u!1 &1565646807
 GameObject:
   m_ObjectHideFlags: 0
