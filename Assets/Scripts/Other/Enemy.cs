@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyType{
-    NoAttack, Attack
+    NoAttack, Attack, Shot
 }
 
 public class Enemy : MonoBehaviour
@@ -25,14 +25,27 @@ public class Enemy : MonoBehaviour
         switch(enemyType)
         {
             case EnemyType.Attack:
-            float dist = Vector3.Distance(_Player.transform.position, transform.position);
-            if(dist < 2 && !isAttack)
-            {
-                animator.SetTrigger("attack");
-                isAttack = true;
-            }
+
+                if(Distance() < 2 && !isAttack)
+                {
+                    animator.SetTrigger("attack");
+                    isAttack = true;
+                }
+                break;
+
+            case EnemyType.Shot:
+                if(Distance() < 4 && !isAttack)
+                {
+                    animator.SetTrigger("shot");
+                    isAttack = true;
+                }
             break;
         }
 
+    }
+
+    private float Distance()
+    {
+        return Vector3.Distance(_Player.transform.position, transform.position);
     }
 }

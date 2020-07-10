@@ -395,7 +395,7 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 96
-        width: 15
+        width: 16
         height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -414,7 +414,7 @@ TextureImporter:
       name: MiniChickenNinja-Enemies_11
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 96
         width: 16
         height: 18
@@ -435,7 +435,7 @@ TextureImporter:
       name: MiniChickenNinja-Enemies_12
       rect:
         serializedVersion: 2
-        x: 111
+        x: 112
         y: 96
         width: 16
         height: 19
@@ -456,9 +456,9 @@ TextureImporter:
       name: MiniChickenNinja-Enemies_13
       rect:
         serializedVersion: 2
-        x: 127
+        x: 128
         y: 96
-        width: 17
+        width: 16
         height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
