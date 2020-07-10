@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1422289826775522557}
   - component: {fileID: 1422289826775522556}
   m_Layer: 0
-  m_Name: Firegoum
+  m_Name: Firegowm
   m_TagString: damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

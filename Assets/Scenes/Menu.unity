@@ -5169,6 +5169,7 @@ MonoBehaviour:
   - {fileID: 1497331786674236754, guid: f5a4d0d2f500b9c4b9880cac146f4b5c, type: 3}
   - {fileID: 7486846050819127850, guid: 1384f22aa08de7745bdc281b2aa1b959, type: 3}
   - {fileID: 1565594866118683416, guid: def650ee39805c948a2625183442ce24, type: 3}
+  - {fileID: 2006901492434670459, guid: 1f419459c220ab64da7c48d5bd3009ce, type: 3}
   weaponPrefab:
   - {fileID: 775842896742663145, guid: eb672d002c4f9024994528fc9c2d1c1d, type: 3}
   - {fileID: 70611201483252781, guid: 007a9e5514aa92e40bafe42c382e5fc9, type: 3}
@@ -5178,6 +5179,8 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 1422289826775522435, guid: 3096b0fbf99abc643a5e58ea5d40369a, type: 3}
   - {fileID: 8384666671366987027, guid: 72e7c86f7abf5984aa2cc66db22f4498, type: 3}
+  - {fileID: 5438177905634601634, guid: 1d5664ed3ed28054e97f7b6e39baed37, type: 3}
+  - {fileID: 2932292912724352423, guid: f355c3f5a1c927a48916eb7efa8a5b32, type: 3}
   scoreAnimPrefab:
   - {fileID: 8489470426197969597, guid: 644de334663f9964a97ba123651c5a2e, type: 3}
   - {fileID: 6744527169048038555, guid: 1fca0c2a5d035314086233a10a67d2ed, type: 3}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyType{
-    NoAttack, AmangownAttack
+    NoAttack, Attack
 }
 
 public class Enemy : MonoBehaviour
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
 
         switch(enemyType)
         {
-            case EnemyType.AmangownAttack:
+            case EnemyType.Attack:
             float dist = Vector3.Distance(_Player.transform.position, transform.position);
             if(dist < 2 && !isAttack)
             {
