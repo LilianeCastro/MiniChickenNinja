@@ -25,6 +25,11 @@ public class Weapon : MonoBehaviour
             rbWeapon.AddForce(Vector2.one * forceImpulseWeapon, ForceMode2D.Impulse);
             StartCoroutine("explosion");
         }
+        //Enemy attack
+        if(idWeapon==6)
+        {
+            rbWeapon.velocity = new Vector2(speedWeapon, 0);
+        }
     }
 
     private void OnBecameVisible() {
@@ -46,6 +51,12 @@ public class Weapon : MonoBehaviour
             Destroy(this.gameObject);
             Destroy(other.gameObject);
             Destroy(temp.gameObject, 1f);
+        }
+
+        if((other.gameObject.tag.Equals("Player") || other.gameObject.tag.Equals("weapon")) && isWeaponVisible && idWeapon==6)
+        {
+            GameObject temp = Instantiate(_GameController.vFxDestroy[0], other.transform.position, other.transform.rotation);
+            print("ENTORU");
         }
     }
 

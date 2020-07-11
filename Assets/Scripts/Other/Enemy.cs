@@ -8,6 +8,7 @@ public enum EnemyType{
 
 public class Enemy : MonoBehaviour
 {
+    private GameController _GameController;
     private Player _Player;
     private Animator animator;
 
@@ -17,6 +18,8 @@ public class Enemy : MonoBehaviour
 
     private void Start() {
         _Player = FindObjectOfType(typeof(Player)) as Player;
+        _GameController = FindObjectOfType(typeof(GameController)) as GameController;
+
         animator = GetComponent<Animator>();
     }
 
@@ -26,7 +29,7 @@ public class Enemy : MonoBehaviour
         {
             case EnemyType.Attack:
 
-                if(Distance() < 2 && !isAttack)
+                if(DistanceX() < 2 && DistanceY() < 0.5 && !isAttack)
                 {
                     animator.SetTrigger("attack");
                     isAttack = true;
@@ -34,18 +37,25 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyType.Shot:
-                if(Distance() < 4 && !isAttack)
+                if(DistanceX() < 5 && DistanceY() < 0.5 && !isAttack)
                 {
                     animator.SetTrigger("shot");
                     isAttack = true;
+                    Instantiate(_GameController.weaponPrefab[2], new Vector2(transform.position.x - 0.15f, transform.position.y + 0.15f), transform.rotation);
                 }
-            break;
+                break;
         }
 
     }
 
-    private float Distance()
+    private float DistanceX()
     {
-        return Vector3.Distance(_Player.transform.position, transform.position);
+        return transform.position.x - _Player.transform.position.x;
+
+    }
+
+    private float DistanceY()
+    {
+        return transform.position.y - _Player.transform.position.y;
     }
 }

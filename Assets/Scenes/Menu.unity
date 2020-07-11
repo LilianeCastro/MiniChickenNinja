@@ -2813,7 +2813,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e462626ed814aa54982dd2a9597a5b94, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5175,6 +5175,7 @@ MonoBehaviour:
   weaponPrefab:
   - {fileID: 775842896742663145, guid: eb672d002c4f9024994528fc9c2d1c1d, type: 3}
   - {fileID: 70611201483252781, guid: 007a9e5514aa92e40bafe42c382e5fc9, type: 3}
+  - {fileID: 6052972278926227314, guid: c06c4b5604cbf174199e11503588e8ef, type: 3}
   vFxDestroy:
   - {fileID: 7008930948026419885, guid: d739eb83c7353fa43904fbc16b1d5d2d, type: 3}
   - {fileID: 9109152281817665967, guid: c71a3854859b61e40b4fbac446f2003d, type: 3}

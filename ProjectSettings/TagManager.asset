@@ -8,6 +8,7 @@ TagManager:
   - damage
   - playerPass
   - collectableDouble
+  - weapon
   layers:
   - Default
   - TransparentFX

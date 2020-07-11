@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 775842896742663126}
   m_Layer: 0
   m_Name: Kunai
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
